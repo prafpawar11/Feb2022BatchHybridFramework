@@ -65,6 +65,8 @@ public class LoginPageTest extends BaseClass {
 		//loginpage.clickOnLoginButton();
 		ExtentReportSetUp.getScreenshotPassedTestCases("validateLoginButton");
 		System.out.println("Login is sucessful");
+		
+		System.out.println("Login is page code is  sucessful");
 	}
 
 	@AfterClass
