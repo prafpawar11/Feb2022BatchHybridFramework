@@ -16,6 +16,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<java.home>C:\Program Files\Java\jdk1.8.0_311\bin\</java.home>
 	</properties>
 
 	<dependencies>
@@ -115,6 +116,8 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+					<fork>true</fork>
+					<executable>C:\Program Files\Java\jdk1.8.0_311\bin</executable>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -125,6 +128,7 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
+
 				</configuration>
 			</plugin>
 		</plugins>
