@@ -62,7 +62,7 @@ public class LoginPageTest extends BaseClass {
 		boolean actualLoginEnabledStatus = loginpage.checkLoginEnabledStatus();
 		Assert.assertEquals(true, actualLoginEnabledStatus);
 
-		loginpage.clickOnLoginButton();
+		//loginpage.clickOnLoginButton();
 		ExtentReportSetUp.getScreenshotPassedTestCases("validateLoginButton");
 	}
 
