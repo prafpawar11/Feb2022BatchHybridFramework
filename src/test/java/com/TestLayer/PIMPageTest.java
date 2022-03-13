@@ -45,7 +45,7 @@ public class PIMPageTest extends BaseClass {
 	@Test(priority = 3)
 	public void validateAddEmployeeFunctionality() {
 		pimpage.clickOnAddButton();
-
+		
 		String excelPIMpath = System.getProperty("user.dir") + "/src/main/java/com/TestData/PIMPageTestData.xlsx";
 
 		ExcelReaderData excelReader=new ExcelReaderData(excelPIMpath);
@@ -53,7 +53,7 @@ public class PIMPageTest extends BaseClass {
 		String firstName = excelReader.getData(0, 0, 0);
 		String middleName = excelReader.getData(0, 0, 1);
 		String lastName = excelReader.getData(0, 0, 2);
-		pimpage.AddEmployeeDetails(firstName, middleName, lastName);
+		pimpage.AddEmployeeDetails("Amit", "Abc", "PAndit");
 	}
 
 	@Test(priority = 4)
@@ -64,7 +64,8 @@ public class PIMPageTest extends BaseClass {
 	}
 
 	@Test(priority = 5)
-	public void validateAddEmployeePersonalDetails() {
+	public void validateAddEmployeePersonalDetails() throws InterruptedException {
+		Thread.sleep(4000);
 		pimpage.clickOnSaveButton();
 		String actualUrlInPersonalDetailsPage = driver.getCurrentUrl();
 		Assert.assertEquals(true, actualUrlInPersonalDetailsPage.contains("/pim/viewPersonalDetails"));

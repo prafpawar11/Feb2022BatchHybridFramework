@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="none" name="Failed suite [Default suite]">
-	<test parallel="none" name="Default test(failed)">
-		<classes>
-			<class name="com.TestLayer.sample1">
-				<methods>
-					<include name="m1" />
-				</methods>
-			</class> <!-- com.TestLayer.sample1 -->
-		</classes>
-	</test> <!-- Default test(failed) -->
+  <test parallel="none" name="Default test(failed)">
+    <classes>
+      <class name="com.TestLayer.PIMPageTest">
+        <methods>
+          <include name="validatePersonalDetails"/>
+          <include name="validateAddEmployeePersonalDetails"/>
+          <include name="validateAddEmployeeFunctionality"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.TestLayer.PIMPageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

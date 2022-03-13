@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="29908" started-at="2022-03-13T20:26:41 IST" finished-at="2022-03-13T20:27:11 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="29908" started-at="2022-03-13T20:26:41 IST" finished-at="2022-03-13T20:27:11 IST">
+      <class name="com.TestLayer.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.TestLayer.HomePageTest@7791a895]" name="setUp" is-config="true" duration-ms="12230" started-at="2022-03-13T20:26:42 IST" finished-at="2022-03-13T20:26:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateLoginFunctionality()[pri:1, instance:com.TestLayer.HomePageTest@7791a895]" name="validateLoginFunctionality" duration-ms="5493" started-at="2022-03-13T20:26:54 IST" finished-at="2022-03-13T20:27:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginFunctionality -->
+        <test-method status="PASS" signature="validateHomePageTitle()[pri:2, instance:com.TestLayer.HomePageTest@7791a895]" name="validateHomePageTitle" duration-ms="19" started-at="2022-03-13T20:27:00 IST" finished-at="2022-03-13T20:27:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHomePageTitle -->
+        <test-method status="PASS" signature="validateHomePageurl()[pri:3, instance:com.TestLayer.HomePageTest@7791a895]" name="validateHomePageurl" duration-ms="16" started-at="2022-03-13T20:27:00 IST" finished-at="2022-03-13T20:27:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHomePageurl -->
+        <test-method status="PASS" signature="validateLogoFunctinality()[pri:4, instance:com.TestLayer.HomePageTest@7791a895]" name="validateLogoFunctinality" duration-ms="122" started-at="2022-03-13T20:27:01 IST" finished-at="2022-03-13T20:27:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogoFunctinality -->
+        <test-method status="PASS" signature="validateAdminPageLink()[pri:5, instance:com.TestLayer.HomePageTest@7791a895]" name="validateAdminPageLink" duration-ms="2288" started-at="2022-03-13T20:27:01 IST" finished-at="2022-03-13T20:27:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAdminPageLink -->
+        <test-method status="PASS" signature="validatePIMPageLink()[pri:6, instance:com.TestLayer.HomePageTest@7791a895]" name="validatePIMPageLink" duration-ms="2088" started-at="2022-03-13T20:27:04 IST" finished-at="2022-03-13T20:27:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePIMPageLink -->
+        <test-method status="PASS" signature="validateLeavePageLink()[pri:7, instance:com.TestLayer.HomePageTest@7791a895]" name="validateLeavePageLink" duration-ms="2557" started-at="2022-03-13T20:27:06 IST" finished-at="2022-03-13T20:27:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLeavePageLink -->
+        <test-method status="PASS" signature="validateLogoutLink()[pri:8, instance:com.TestLayer.HomePageTest@7791a895]" name="validateLogoutLink" duration-ms="0" started-at="2022-03-13T20:27:09 IST" finished-at="2022-03-13T20:27:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogoutLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.TestLayer.HomePageTest@7791a895]" name="tearDown" is-config="true" duration-ms="1201" started-at="2022-03-13T20:27:10 IST" finished-at="2022-03-13T20:27:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.TestLayer.HomePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

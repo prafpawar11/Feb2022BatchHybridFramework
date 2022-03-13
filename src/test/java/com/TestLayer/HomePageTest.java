@@ -64,7 +64,7 @@ public class HomePageTest extends BaseClass {
 
 	@Test(priority = 8)
 	public void validateLogoutLink() {
-		homepage.clickOnlogOut();
+		//homepage.clickOnlogOut();
 	}
 
 	@AfterClass

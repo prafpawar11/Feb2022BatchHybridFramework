@@ -5,6 +5,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -21,7 +22,6 @@ public class BaseClass {
 	public static Properties prop;
 	public static WebEventListner eventListener;
 	public static EventFiringWebDriver e_driver;
-	
 
 	public BaseClass() {
 		prop = new Properties();
@@ -37,41 +37,13 @@ public class BaseClass {
 
 	public static void initialization() {
 
-		String browsers = prop.getProperty("browsername");
-
-		if (browsers.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir") + "//AllBrowserDrivers//chromedriver.exe");
-			driver = new ChromeDriver();
-		} else if (browsers.equalsIgnoreCase("opera")) {
-			// System.setProperty("webdriver.opera.driver", "path");
-			WebDriverManager.operadriver().setup();
-			driver = new OperaDriver();
-		} else if (browsers.equalsIgnoreCase("firfox")) {
-			System.setProperty("webdriver.gheko.driver", "path");
-			driver = new FirefoxDriver();
-		} else if (browsers.equalsIgnoreCase("ie")) {
-			System.setProperty("webdriver.ie.driver", "path");
-			driver = new InternetExplorerDriver();
-		} 
-		
-		else if (browsers.equalsIgnoreCase("edge")) {
-			System.setProperty("webdriver.edge.driver",
-					"C:\\Users\\l470\\Desktop\\25 Dec 2021 Automation Testing\\test Script2\\OrgangeHRMHybridFramework\\AllBrowserDrivers\\msedgedriver.exe");
-			driver = new EdgeDriver();
-		}
-		
-		eventListener=new WebEventListner();
-		
-		e_driver=new EventFiringWebDriver(driver);
-		
-		e_driver.register(eventListener);
-		
-		driver=e_driver;
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\l470\\Downloads\\chromedriver_win32\\chromedriver.exe");
+	
+		driver = new ChromeDriver();
 
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		driver.get(prop.getProperty("url"));
+		driver.get("https://opensource-demo.orangehrmlive.com/");
 	}
 
 }
